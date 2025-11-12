@@ -1,0 +1,4 @@
+Myapp.log
+*.log
+config.env
+\temp\*
