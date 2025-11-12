@@ -2,43 +2,173 @@
  
 <!DOCTYPE html>
 <html>
+    <center>    
 <head>
-    <title>Astote cafe - Fresh Coffe and Pastries</title>
+    <title>Delight cafe - Fresh Coffe and Pastries</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head> 
 </html>
 <body>
-    <header>
-        <h1>Welcome to Astote Cafe</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+
+    <!-- Header Section shows the list of links -->
+    <header class ="site-header">
+        <div class="container header-inner">
+            <img src="OIP.webp" alt="Astote Cafe Logo"><br>
+            <a href="#" class="brand">Delight Cafe</a>
+        <h1>Welcome to Delight Cafe</h1>
+    
+    <a href="#about"> About</a><td></td><td>    </td>
+    <a href="#menu"> Menu</a>
+    <a href="#hours"> Hours</a>     
+    <a href="#contact"> Order / Contact</a>
+
+
+        </div>
     </header>
 
-    <section id="home">
-        <h2>Fresh Coffee and Pastries</h2>
-        <p>Experience the best coffee and pastries in town at Astote Cafe. We pride ourselves on using the freshest ingredients to create delicious treats for our customers.</p>
-    </section>
 
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <ul>
-            <li>Coffee - Espresso, Latte, Cappuccino, Americano</li>
-            <li>Pastries - Croissants, Muffins, Scones, Cookies</li>
-            <li>Specialty Drinks - Mocha, Chai Latte, Iced Coffee</li>
-        </ul>
-    </section>
+<!-- Main heading Area or welcome page-->
+ <section class="hero">
+    <div class="container">
+        <h2>Your daily dose of freshness</h2>
+        <p>Freshly brewed coffee, artisan pastries, and a cozy corner to study. Experience the best coffee and pastries in town!</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+</section>  
 
-    <section id="about">
+
+    <!-- About Section-->
+    <section id="about" class="about-section">
+    <div class="container">
         <h2>About Us</h2>
-        <p>Astote Cafe was founded in 2020 with the mission to provide a cozy atmosphere where people can enjoy high-quality coffee and pastries. Our baristas are passionate about their craft and dedicated to serving you the best.</p>
+        <p>At Delight Cafe, we are passionate about serving the finest coffee and freshly baked pastries. Our cozy atmosphere is perfect for studying, catching up with friends, or simply enjoying a quiet moment with a cup of your favorite brew. We source our beans from sustainable farms and bake our pastries daily to ensure the highest quality for our customers.</p>
+    </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email
+
+<!-- This table shows coffe items and prices-->
+ <section id="menu" class="menu-section">
+    <div class="container">
+        <h2>Our Menu</h2>
+        <table class="menu-table">
+            <!-- Top row that is column titles-->
+            <thead>
+            
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th> Size</th>       
+                <th>Price (SEK)</th>
+            </tr>
+    
+            </thead>
+
+
+<!-- It has each product row-->
+ <tbody>
+
+            <tr>
+                <th>Espresso</th>
+                <td>Rich and bold espresso shot</td>
+                <td>single</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <th>Cappuccino</th>
+                <td>Espresso with steamed milk and foam</td>
+                <td>Small / Large</td>
+                <td>30 / 40</td>
+            </tr>
+            <tr>
+                <th>Latte</th>
+                <td>Smooth blend of espresso and steamed milk</td>
+                <td>Medium</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <th>Blueberry Muffin</th>
+                <td>Freshly baked muffin with blueberries</td>
+                <td>Medium</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <th>Chocolate Croissant</th>
+                <td>Flaky croissant filled with rich chocolate</td>
+                <td>Medium</td>
+                <td>32</td>
+            </tr>
+      </tbody>
+        </table>
+    </div>
+    </section>
+
+    
+    <!-- Hours Table-->
+     <section id="hours" class="hours-section">
+    <div class="container">
+        <h2>Opening Hours</h2>
+        <table class="hours-table">
+            <thead>
+            <tr>
+                <th>Day</th>
+                <th>Opening Hours</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>Monday - Friday</th>
+                <td>8:00 AM - 18:00 PM</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td>9:00 AM - 16:00 PM</td>
+            </tr>
+            <tr>
+                <th>Sunday</th>
+                <td>Closed</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+
+
+
+    <!-- This is order form/ Collecting the customer details-->
+    <section id="contact" class="contact-section">
+    <div class="container"> 
+        <h2>Order / Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter Your Name" id="name" name="name" required>
+<br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter Your Email" id="email" name="email" required>
+<br>
+            <label for="your order">Order:</label>
+            <input type="text" placeholder="Enter Your Order Details" id="your order" name="your order" required>
+<br>    
+            <button type="submit" class="btn">Submit Order</button>
+        </form>
+    </div>
+    </section>  
+
+
+    <!-- Footer Section-->
+    <footer>
+        <br><br>
+<address>
+    Delight Cafe<br>
+    Stortorget 1, 37140 Karlskrona, Sweden<br>
+    Phone: +46 455 123456<br>
+    Email: delightcafe@gmail.com
+</address>
+<p>&copy; 2024 Delight Cafe. All rights reserved.</p>
+    </footer>
+
+</body>
+
+
+</center>
+</html>
