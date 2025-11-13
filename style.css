@@ -1,39 +1,120 @@
-<!-- style.css used to design our webpage -->
+/* style.css used to design our webpage */
+
 body
 {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+    margin: 2px;
+    background-color: lightblue;
+    color: darkblue;
+}
+
+
+/* Header display link */
+.hero-section {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 60px 40px;
     color: white;
-}
-
-
-<!-- Header display link -->
-.site-header
-{
     text-align: center;
-    margin-bottom: 40px;
 }
-.site-header h1
-{
-    font-size: 36px;
-    color: green;
+
+.hero-content {
+    display: flex;
+    align-items: center;        /* align logo + text on same height */
+    justify-content: center;    /* center the entire block */
+                /* space between text and logo */
 }
-.site-header p
-{
-    font-size: 18px;
-    color: yellow;
+
+.hero-text {
+    max-width: 600px;
+    text-align: center;         /* center the text */
+}
+
+.hero-logo {
+    width: 150px;
+    border-radius: 12px;
 }
 
 
-<!-- Main Heading area / Welcome section -->
+
+/* Main Heading area / Welcome section */
+
 .hero
 {
     text-align: center;
-    margin-bottom: 30px;
-}   
+    padding: 60px;
+    background: radial-gradient(violet, darkblue);
+}
 
+.hero h1
+{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.btn
+{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.top-nav a:hover
+{
+    text-decoration: underline;
+}
+
+/* Table containt */
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td
+{
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: left;
+}
+th
+{
+    background-color: lightpink;
+    color:yellowgreen
+}
+
+/*  form styling */
+form
+{
+    background: rgba (225, 225, 225, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+input, textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}   
+button
+{
+    background-color: orange;
+    color: greenyellow;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
+/* Footer styling */
+footer
+{
+    text-align: center;
+    padding: 20px;
+    background-color: darkblue;
+    color:greenyellow;
+    margin-top: 20px;
+}
 
